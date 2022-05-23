@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reports Home Page</title>
+    </head>
+    <body>
+      <h1>Reports</h1>
+      {% if quote %}
+        <h2> {{ quote }}</h2>
+        {% else %}
+        <h2> No variable quote here </h2>
+      {% endif %}
+      <ul>
+        {% for fruit in fruits %}
+        <li>{{fruit}}</li>
+        {% endfor %}
+      </ul>
+    </body>
+  </html>
